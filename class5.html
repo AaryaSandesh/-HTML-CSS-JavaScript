@@ -1,0 +1,56 @@
+<!-- HTML Forms -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- Collective Purpose of form : To collect user input -->
+    <!-- <form action=""></form> : all entities of form come under this-->
+    <!-- <input type="text"> : can be displayed in many forms -->
+    <!-- <label for=""></label> :text attached to know what we have to insert in the text area
+                create lable
+                screen reader
+                for="" : always complete this .Its value is equal to id attribute of input-->
+    <form action="">
+      <label for="email">Enter Email ID:</label>
+      <input type="text" id="email" />
+
+      <br />
+      <br />
+
+      <label for="password">Enter Password:</label>
+      <input type="text" id="password" value="Babbar"/>
+
+      <br />
+      <br />
+      <input type="Submit" value="Click Me" />
+      <button>Click me</button>
+      <br />
+      <br />
+      <label for="date">Date of Birth</label>
+      <input type="date" id="date"/>
+      <!-- Observe : value of for and id is same -->
+      <!-- If we wanna access this elements in future fo that we use ID to specify them -->
+     
+    </form>
+    <p>NOTE :The action attribute in form / type="submit" in input or the button tag itself helps to subit the forms to the server</p> 
+
+    <!-- Placeholders : faded text to know what exactly we have to write in the text box -->
+     <form action=""> 
+    <label for="email">Enter Email ID:</label>
+    <input type="text" id="email" placeholder="Enter email here" required />
+   <button>Click ME</button>
+   <!-- Select is used for dropdown menu -->
+    <label for="mm">Fruit</label>
+    <select name="Fruit" id="mm" required>
+        <option value="Fruit">Banana</option>  
+        <option value="Fruit">Pineapple</option>
+    </select>
+    <!-- TextArea : used for taking multiline input
+     fieldset : for grouping of common elements 
+     legend : for providing caption for field set-->
+  </body>
+</html>
