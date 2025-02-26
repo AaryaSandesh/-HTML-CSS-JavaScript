@@ -3,3 +3,63 @@
 <!-- thead :headings of table
  tbody :actual content of table
  tfoot : summarization of table -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+   <thead>
+    <th>Student ID</th>
+    <th>Student Name</th>
+    <th>Gender</th>
+    <th>Age</th>
+   </thead>
+   <tbody>
+    <tr>
+        <td>12</td>
+        <td>Jadhav</td>
+        <td>Male</td>
+        <td>17</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>vivek</td>
+        <td>Male</td>
+        <td>17</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>vivek</td>
+        <td>Male</td>
+        <td>17</td>
+        
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>vivek</td>
+        <td>Male</td>
+        <td rowspan="3">17</td>
+   <!-- 3 rows tak extend ho ja -->
+
+    </tr>
+    <tr>
+        
+        <td>vivek</td>
+        <td colspan="2">Male</td>
+         
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>vivek</td>
+        <td>Male</td>
+        
+    </tr>
+   <!-- if we wanna expand our row or column.The last will get expanded -->
+</tbody>
+    </table>
+  </body>
+  </html>
