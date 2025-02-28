@@ -6,7 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>
+        Job Application
+    </h2>
     <form action="">
+
        <label for="name">Name :</label> 
        <input type="text" id="name" placeholder="First+Last Name" required>
        <br>
@@ -20,13 +24,55 @@
        <br>
        <br>
        <label for="resume">Resume :</label> 
-       <input type="file" id="resume" required>
+       <input type="file" name="file upload" id="resume" required>
        <br>
        <br>
        <label for="exp">Experiance(in Years) :</label> 
-       <input type="text" id="exp" required>
+       <input type="number" name="counter" min="0" max="50" id="exp" required>
+
+       <fieldset>
+        <legend>Skills</legend>
+        <label for="skill1">HTML</label>
+        <input type="checkbox" id="skill1">
+        <br>
+       <br>
+        <label for="skill2">CSS</label>
+        <input type="checkbox" id="skill2">
+        <br>
+        <br>
+        <label for="skill3">JavaScript</label>
+        <input type="checkbox" id="skill3">
+        <br>
+        <br>
+       </fieldset>
+       <br>
+        <label for="edutype">Highest Education :</label>
+        <select name="edutype" id="edutype">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+            <option value="d">D</option>
+            <option value="e">E</option>
+        </select>
+        <br>
+        <br>
+        <fieldset> 
+       <legend>Availability</legend>
+       <label for="radio1">Full-time</label>
+       <input type="radio" name="radio" id="radio1">
        <br>
        <br>
+       <label for="radio2">Part-time</label>
+       <input type="radio" name="radio" id="radio2">
+    </fieldset>
+    <br>
+    <br>
+    <label for="addcom">Additional Comments :</label>
+    <br>
+    <textarea name="addcomm" id="addcomm" rows="10" cols="50"></textarea>
+    <br>
+    <br>
+    <button>Submit Application</button>
     </form>
 </body>
 </html>
