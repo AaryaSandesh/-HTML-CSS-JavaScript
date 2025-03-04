@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+        h1{
+            color: aqua;
+            /* border-style:solid;
+            border-width:2px;
+            border-color: brown; */
+            border: 2px solid brown;
+            border-radius: 25px;
+            /* corner ko main rounded kr sakti hu */
+            border-top-left-radius: 5px;
+            border-bottom: 5px solid plum;
+            width: 400px;
+            height: 200px;
+        }
+        .firstpara{
+            background-color: aliceblue;
+            border: 5px solid plum;
+            border-radius: 25px;  height: 200px;
+        }
+        .secondpara{
+            background-color: beige;
+            border: 5px solid plum;
+            border-radius: 25px;
+        }
+        .thirdpara{
+            background-color: yellow;
+            border: 5px solid plum;
+            border-radius: 25px;
+        }
+        span{
+            background-color: bisque;
+            border: 3px solid burlywood;
+            border-radius: 2px;
+            width: 50px;
+            height: 44px;
+            /* as span is an inline element this properties wont be applied on span tag */
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to CodeHelp</h1>
+    <span>Welcome Nishant and Subhesh Bhaiyya</span>
+    <p class="firstpara">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse harum
+      recusandae accusamus itaque consectetur iure incidunt laborum illo iste
+      distinctio, a assumenda ipsa. Unde molestiae aliquid veritatis vitae iste,
+      corporis veniam, animi incidunt quis earum laboriosam adipisci deleniti
+      assumenda magnam.
+    </p>
+    <p class="secondpara">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex labore
+      minima sint accusamus deserunt atque omnis odit. Magni soluta saepe
+      pariatur quod hic. Deserunt, illo voluptatibus. Aliquam praesentium
+      excepturi labore. Illum eum quam adipisci perferendis iusto rem itaque
+      perspiciatis, officiis officia nobis non quae et at eos ea eius?
+    </p>
+    <p class="thirdpara">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos nihil,
+      cupiditate saepe pariatur distinctio voluptatum minima, impedit dolore id
+      esse perspiciatis voluptas voluptates expedita nemo modi repellat sed
+      omnis praesentium!
+    </p>
+    <!-- Every content on any webpage will be rendered in the rectangular box -->
+     <!-- Box Model :
+      Content
+      Padding : content and border ke bich ka space
+       Border
+       Margin : do boxes ke bich ka jo gap hain that is called margin
+       -->
+  </body>
+</html>
