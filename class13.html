@@ -27,8 +27,9 @@
             /* relative to nearby closest parent
             generally mark that parent as relative and child absolute 
             gap is not maintained here*/
-          position: absolute;
-          
+          position: absolute; /*can cause overlapping due to img shift*/
+          top: 100px;
+          /* no overlapping now */
         }
 
     </style>

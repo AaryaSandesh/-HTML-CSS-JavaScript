@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            position: relative;
+            height: 8000px;
+            background-color: bisque;
+        }
+        img{
+       
+            margin: 10px;
+            
+        }
+        .img4{
+            /* in any container it is fixed */
+          position: fixed;  
+        }
+        .img3{
+            /* we need to explicitly mention at what position it needs to be sticky */
+            /* it remains sticky until present in parent container */
+            top: 100px;
+            position: sticky;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Screenshot 2025-01-26 113130.png" alt="poster 1" width="100px" height="100px" class="img1">
+        <img src="Screenshot 2024-10-02 220007.png" alt="poster 2" width="100px" height="100px" class="img2">
+        <img src="image.png" alt="poster 3" width="100px" height="100px" class="img3">
+        <img src="kanha.png" alt="poster 4" width="100px" height="100px" class="img4">
+     
+     </div>
+     <div class="box"></div>
+</body>
+</html>
