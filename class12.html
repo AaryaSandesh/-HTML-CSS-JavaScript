@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            border:1px solid brown;
+            width: 50px; /*custom width and height*/
+            height: 50px;
+            margin:25px;
+            padding:25px;
+        }
+        p{
+            /* Before adding box sizing */
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            padding: 100px;
+            /* After adding box sizing :actual box size main kuch change nhi ayega content shrink ho jayega */
+            box-sizing: border-box;
+        }
+        span{
+            border: 2px solid green;
+            width: 400px;
+            height: 500px;
+            margin: 10px;
+            padding: 15px;
+            /* now all properties will work after making it block */
+            display: block;
+        }
+       i{
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid aqua;
+       }
+    </style>
+</head>
+<body>
+    <!-- Display Property : defines the display behaviour (type of rendering box) of an element-->
+     <!--Block element :1.it takes new line
+     2.width :extreme left to extreme right
+     3.custom width and height 
+     4.custom margin and padding -->
+     <!-- Box sizing : border box .This will increse the overall size of box after adding margin and padding accordingly -->
+      <!-- Inline : 1.same line (if width is available otherwiae will go in different line) 
+       2.width : content width
+       3.custom width/height :noooo
+       4.custom margin: nooo(only horizontal)
+       5.padding:yesss-->
+       <!-- Can we convert inline to block and vice-versa?
+        yes  display:inline/block-->
+        <!-- diplay:inline-block. Beaves like inline element but we can apply our custom properties -->
+
+     <div>
+        Welcome to CodeHelp
+     </div>
+     <div>
+        Welcome to CodeHelp 2.0
+     </div>
+     <p>
+        Welcome Subhesh and Nishant
+     </p>
+      
+     <span>
+        This is Love Babbar
+     </span>
+     <span>
+        This is Love Babba 2.0
+     </span>
+     <i>Arya Sandesh Patil</i>
+</body>
+</html>
