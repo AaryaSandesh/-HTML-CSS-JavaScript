@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        div{
+            border: 1px solid black;
+            position: relative;
+        }
+        img{
+       
+            margin: 10px;
+            
+        }
+        .img2{
+            /* position: relative;
+            top:100px ;
+            left: 100px; */
+            /* According to current window we are positioning it
+            4 properties : top, left,bottom,right '
+            gap maintained*/
+        }
+        .img3{
+            /*for overlapping we generally use absolute positioning  */
+            /* relative to nearby closest parent
+            generally mark that parent as relative and child absolute 
+            gap is not maintained here*/
+          position: absolute;
+          
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Position Property : sets how element is positioned in a document -->
+    <!-- Bydefault: static-->
+     <div class="container">
+        <img src="Screenshot 2025-01-26 113130.png" alt="poster 1" width="100px" height="100px" class="img1">
+        <img src="Screenshot 2024-10-02 220007.png" alt="poster 2" width="100px" height="100px" class="img2">
+        <img src="image.png" alt="poster 3" width="100px" height="100px" class="img3">
+        <img src="kanha.png" alt="poster 4" width="100px" height="100px" class="img4">
+     
+     </div>
+</body>
+</html>
