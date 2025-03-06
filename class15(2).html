@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid black;
+              /* to reduce the overflow */
+              overflow: auto;
+              /* visible,hidden,auto
+              learn the properties*/
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            /* the great collapse as the actual size of the box is collapsed and comes in a one line 
+            all 3 boxes are overflowing */
+            float: left;
+           }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>
