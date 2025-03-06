@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em and rem (Relative Units)</title>
+    <style>
+        /* .wrapper{
+            font-size: 1em;
+            /* default font size 16 px 
+            em multiplies with default font size
+        }
+        .boxpx{
+            width:200px ;
+        }
+        .boxvw{
+            width:10vw;
+        }
+        .boxem{
+            width: 10em;
+        } */
+     .container{
+        font-size: 10px;
+     }
+     .box{
+        font-size: 10em ;
+        /* ṭhis means 10 *(parent size) =10*10*/
+     }
+    .pad{
+        padding: 40px;
+    }
+    .box1{
+        border: 2px solid red;
+        padding: 10em;
+        /* for padding depends on the font size of itself and gets multiplied by its own font size  */
+    }
+    .firstpara{
+        border: 1px solid black;
+        font-size: 4rem;
+
+    }
+    </style>
+</head>
+<body>
+    <!-- <div class="wrapper">
+        <div class="boxpx">I am 200px wide</div>
+        <div class="boxvw">I am 10vw wide</div>
+        <div class="boxem">I am 10 em wide</div>
+    </div> -->
+    <p class="firstpara">
+        Hello Jee
+    </p>
+    <div class="container">
+        <div class="box">
+            WelCome to CodeHelp
+        </div>
+    </div>
+<div class="pad">
+    <div class="box1">
+        Keep Progressing
+    </div>
+</div>
+
+
+
+
+<!-- rem : relative to root element -->
+</body>
+</html>

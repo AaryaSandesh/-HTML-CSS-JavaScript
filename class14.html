@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <!-- Difference between physical and logical pixel 
+     Physical : smallest individual unit on a display screen that emits light and color
+     actual no. of pixels on a device screen is fixed
+     Logical :abstract unit used in a software to ensure UI elements appear consistent across different screen densities
+     They adjust based on device pixel ratio to make UI elements look the same size across different screens -->
+
+     <!--PPI (Pixels Per Inch) vs. DPI (Dots Per Inch)
+       PPI :It refers to the number of pixels displayed per inch on a digital screen.Used for screens, monitors, and digital images.
+       Higher PPI means a sharper and more detailed image.
+       DPI :It refers to the number of printed dots per inch in a physical print.
+      Used in printers and scanners to measure print quality. 
+      Higher DPI means finer print details and better print quality.-->
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            border: 2px solid red;
+            width: 25%;
+            /* 25% of what?
+            it is of its immediate parent */
+        }
+        .parent{
+           border: 1px solid black; 
+           background-color: beige;
+           width: 50%;
+        }
+        .child{
+            border: 1px solid green;
+            background-color: aqua;
+            width: 20%;
+        }
+        .container{
+           background-color: antiquewhite; 
+           border: 2px solid black;
+           height: 80vh;
+           /* viewport is the entire window where web is visible :v */
+         width: 50vw;
+        }
+        .box1{
+           border : 1px solid black;
+           font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Relative Units and Absolute Units -->
+     <div class="box"> 
+        Welcome to AlgoPrep
+     </div>
+     <br>
+     <br>
+     <div class="parent">
+        <div class="child">
+            CHILD
+        </div>
+     </div>
+     <br>
+     <div class="container">
+        Welcome to AlgoPrep
+     </div>
+     <div class="box1">Love Babbar</div>
+</body>
+</html>
