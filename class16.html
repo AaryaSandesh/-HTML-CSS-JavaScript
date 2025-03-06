@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <!-- For Creating Layout (1Dimension)-->
+     <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+         padding: 2px;
+         display: flex;
+         /* It creates an responsive design */
+         /* agar hum kisi bhi item ko flex mark krte hain toh by default uski direction : row horizontal hoti hain */
+         flex-direction: row-reverse;
+         /* The values get reversed row-wise */
+         flex-wrap: wrap-reverse;
+         /* Jab tak space available hain the available content will not be squeezed instead it will move down .
+         once the there is no option then it gets squeezed */
+         /* default : nowrap (it will not wrap) */
+
+        }
+
+        /* Justify content : places the things according to the main axis 
+        if flex direction is row : main axis--horizontal axis
+           column : main axis--vertical axis*/
+        .box{
+            height: 150px;
+            width: 150px;
+         border: 1px solid brown;
+         margin: 2px;
+         padding: 2px;
+        }
+        #b1{
+         background-color: aqua;
+         height: 50px;
+            width: 50px;
+        }
+        #b2{
+       background-color:blue ;
+       height: 50px;
+       width: 50px;
+        }
+        #b3{
+     background-color: orange;
+     height: 50px;
+     width: 50px;
+        }
+        #b4{
+     background-color: brown;
+     height: 50px;
+     width: 50px;
+        }
+     </style>
+</head>
+<body>
+    <!-- Parent Container :flex container 
+     They contain flex items
+     Horizontal axis : main axis
+      and vertical axis-: cross axis-->
+
+      <!-- In order to create flex container write display : flex-->
+       <div class="container">
+        <div class="box" id="b1"></div>
+        <div class="box" id="b2"></div>
+        <div class="box" id="b3"></div>
+        <div class="box" id="b4"></div>
+       </div>
+</body>
+</html>
