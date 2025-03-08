@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox2</title>
+    <!-- Justify content -->
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+         padding: 2px; 
+         display: flex;
+         /* display flex by default row hain toh main axis is horizontal axis */
+         justify-content:flex-start;
+         /* justify-content: space-between; */
+         /* justify-content: space-around; */
+         flex-direction: row;
+         align-items:flex-start;
+         /* align items property works around the cross axis */
+         /* align item has stretch as a bydefault value */
+         height: 500px;
+         /* flex-wrap: wrap; */
+         align-content:center ;
+         /* space between the two items in different lines is reduced */
+        }
+         /* justify content works around the main axis and align items works around the cross axis */
+         .box{
+            height: 150px;
+            width: 150px;
+         border: 1px solid brown;
+         margin: 2px;
+         padding: 2px;
+        }
+        #b1{
+         background-color: aqua;
+         height: 50px;
+            width: 50px;
+            order:500;
+            flex-shrink: 4;
+            /* changing the shrinking speed of box */
+            align-self: center;
+        }
+        #b2{
+       background-color:blue ;
+       height: 50px;
+       width: 50px;
+       flex-grow: 1;
+       /* changing the growing speed of box */
+        }
+        #b3{
+     background-color: orange;
+     height: 50px;
+     width: 50px;
+     flex-grow: 1;
+        }
+        #b4{
+     background-color: brown;
+     height: 50px;
+     width: 50px;
+     order:-1;
+     /* changing the sequence of flex items */
+     flex-basis: 40px;
+     /* sets the dimensions of box */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="b1">BOX1</div>
+        <div class="box" id="b2">BOX2</div>
+        <div class="box" id="b3">BOX3</div>
+        <div class="box" id="b4">BOX4</div>
+       </div>
+</body>
+</html>
