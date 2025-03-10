@@ -51,6 +51,35 @@ let c=10;
 //4]meaningful names
 //5]no reserved keywords
 
+// Datatypes :type of data and size of data
+// Primitive :already defined ex}number,string,boolean,undefined etc.
+// Non-Primitive
+
+// Number :1,2,3,44.5.....
+// Character :A,d,$........
+// String : Love , Babbar
+// Boolean :true,false
+// undefined :let a;--> not defined 
+let marks; //no value is yet inserted here
+console.log(marks);
+
+// null-->tumne ek variable ke andar null value insert kr di hain
+let value=null;
+console.log(value);
+
+// BigInt: capable to create numbers more than 2^53-1
+// To check the type of data
+marks=false;
+console.log(typeof(marks));
+
+// Symbol :returns unique symbol value each time it is called
+// immutable and unique
+// Even if multiple symbols are created with the same description, they are still different values.
+let id1 = Symbol('id');
+console.log(id1);
+let id2 = Symbol('id');
+// alert(id1 == id2); // false
+
 
 
 
