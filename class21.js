@@ -9,7 +9,7 @@ else{
     console.log("cannot vote")
 }
 let number=3
-switch(num){
+switch(number){
     case 1:console.log('a')
     break
     case 2:console.log('b')
