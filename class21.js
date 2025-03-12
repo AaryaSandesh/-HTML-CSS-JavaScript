@@ -18,3 +18,8 @@ switch(number){
     break
     default :console.log('d')
 }
+
+// Literals :actual values assigned directly to variables in javascript
+let a=25
+//here 25 is a literal and 'a' is the variable name where that literal is stored
+
