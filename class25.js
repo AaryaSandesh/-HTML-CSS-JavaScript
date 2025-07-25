@@ -84,3 +84,27 @@ for(let key in obj){
 for(let key in obj){
     console.log(key," ",obj[key])
 }
+
+// for of loop :
+let err=[10,20,30,40]
+for(let value of err){
+    console.log(value)
+}
+let fullname="aarya"
+for(let value of fullname){
+     console.log(value)
+}
+
+// Arrays with Functions
+let frr=[10,20,30,40,50]
+function getSum(arr){
+   let len=frr.length
+   let sum=0;
+    for (let i=0;i<len;i++){
+    sum=sum+frr[i]
+    }
+    return sum
+}
+
+let total=getSum(frr);
+console.log(total)
