@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="fpara" class="TextMatter">First Paragraph</p>
+    <p id="spara" class="TextMatter">Second Paragraph</p>
+    <p id="tpara" class="TextMatter">Third Paragraph</p>
+    <p id="fopara" class="TextMatter">Fourth Paragraph</p>
+    <h1 id="fheading" class="TextMatter">First Heading</h1>
+    <div id="box">
+        <p>Hello Jee</p>
+    </div>
+    <!-- All about ACCESSING THE ELEMENTS -->
+    <!-- document.getElementById("fpara")
+     getElemnetById is applied on the object .Here object is document -->
+     <!-- To get elements byclass Name we use : document.getElementsByClassName("TextMatter") -->
+      <!--document.getElemntsByTagName('p') -->
+
+<!-- Another method as we have symbols for IDs, Tags and class.
+  querySlectors: document.querySelector('#fpara') -for ID
+ document.querySelector('.TextMatter') :for class .We get only one output that is first one using that class-->
+ <!-- document.querySelector('p') : output for Tag same as class-->
+  <!-- To get all objects using that class or tag us querySelectorAll
+ eg. document.querySelectorAll('p')  -->
+
+ <!-- "$0" method also u can apply -->
+  <!-- We can store it in variable too
+   let para=$0
+   para -->
+<div id="fdiv">
+    <p> 
+This is my first 
+<span>
+Text
+</span>
+</p>
+<p>This is my second para</p>
+</div>
+
+
+
+
+
+<!-- Updating existing elements -->
+ <!-- Inner HTML : The tags inside HTML part can be get or set through this
+  $0
+  let button =$0
+  buttton
+  button.innerHTML
+  To set the value : button.innerHTML='<p>Hello Jee</p>'-->
+<!-- Outer HTML :	Gets or sets the HTML including the element itself and its content.
+ button.outerHTML -->
+ <!-- TextContent :
+  let element=document.querySelector('#fdiv')
+  element
+  element.textContent 
+  InnerTEXT :element.innerText-->
+  <!-- | Feature           | `innerText`                             | `textContent`                           |
+| ----------------- | --------------------------------------- | --------------------------------------- |
+| **What it gives** | Only **visible** text on the screen     | All the text, **even hidden**           |
+| **Line breaks**   | Includes line breaks                    | Keeps everything in one line (usually)  |
+| **Performance**   | Slower (because it checks styling)      | Faster                                  |
+| **Used when**     | You want to get what user actually sees | You want **all** the text (even hidden) | -->
+
+
+
+
+<!-- Adding Elements 
+ For element creation: createElement('h1')
+  appendChild()//The child is added at the end
+  How to use it??
+  let fheading=document.createElement('h1')
+  fheading
+  fheading.textContent="My name is Arya Patil"
+  fheading
+  let bodyTag=document.querySelector('body')
+  bodyTag
+  bodyTag.appendChild(fheading)
+  bodyTag-->
+  <!-- We can add elements at our desired position  using insertAdjecentElement()
+   two things must be provided : position , HTML content  -->
+<div style="background-color: aquamarine; padding: 1rem;">
+    Hello Jee
+    <div id="mydiv" style="padding: 3rem; background-color: aqua;">
+    <p id="fparass">First</p>
+    <h1>Second</h1>
+    <p>Third</p>
+    </div>
+</div>
+<!-- To add at desired position: positions we can use are-beforebegin , afterbegin , beforeend , afterend.
+ let mydiv=document.querySelector('#mydiv')
+ mydiv
+ let newElement=document.createElement('span')
+ newElement
+ newElement.textContent="This is aarya"
+ newElement
+ mydiv.insertAdjacentElement('beforebegin',newElement)
+ -->
+  <script src="class32.js"></script>
+
+
+
+
+<!-- Removal
+ removeChild()
+  parent and child hona important hain
+ kya main chld wale element se parent find kr sakta hu? -->
+</body>
+</html>
